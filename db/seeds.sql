@@ -1,0 +1,89 @@
+INSERT INTO orders (
+  order_number,
+  name,
+  patty_type,
+  has_lettuce,
+  has_tomato,
+  has_onion,
+  has_pickles,
+  has_bacon,
+  has_cheese,
+  has_ketchup,
+  has_mustard,
+  has_bbq,
+  price
+) VALUES (
+  1,
+  "Bobbert",
+  "meat",
+  1,
+  1,
+  1,
+  0,
+  1,
+  1,
+  0,
+  0,
+  1,
+  10.50
+);
+
+INSERT INTO orders (
+  order_number,
+  name,
+  patty_type,
+  has_lettuce,
+  has_tomato,
+  has_onion,
+  has_pickles,
+  has_bacon,
+  has_cheese,
+  has_ketchup,
+  has_mustard,
+  has_bbq,
+  price
+) VALUES (
+  2,
+  "Shaggy",
+  "veggie",
+  1,
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  1,
+  0,
+  8.75
+);
+
+INSERT INTO orders (
+  order_number,
+  name,
+  patty_type,
+  has_lettuce,
+  has_tomato,
+  has_onion,
+  has_pickles,
+  has_bacon,
+  has_cheese,
+  has_ketchup,
+  has_mustard,
+  has_bbq,
+  price
+) VALUES (
+  3,
+  "Gordon",
+  "meat",
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  1,
+  12.00
+);
