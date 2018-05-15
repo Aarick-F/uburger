@@ -5,6 +5,11 @@ const burger = {
     orm.selectAll("orders", res => {
       cb(res);
     });
+  },
+  createOne: (cols, vals, cb) => {
+    orm.createOne("orders", cols, vals, res => {
+      cb(res);
+    });
   }
 }
 
