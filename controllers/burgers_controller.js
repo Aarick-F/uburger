@@ -7,12 +7,16 @@ const columns = ["name", "patty_type", "has_lettuce", "has_tomato",
                 "has_ketchup", "has_mustard", "has_bbq", "price"];
 
 router.get("/", (req, res) => {
+  res.render("index");
+});
+
+router.get("/orders", (req, res) => {
   burgers.selectAll(data => {
     let ordersObject = {
       orders: data
     };
     console.log(ordersObject);
-    res.render("index", ordersObject);
+    res.render("orders", ordersObject);
   });
 });
 
