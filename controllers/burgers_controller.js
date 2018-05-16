@@ -20,6 +20,10 @@ router.get("/orders", (req, res) => {
   });
 });
 
+router.get("/create", (req, res) => {
+  res.render("create");
+});
+
 router.post("/api/orders", (req, res) => {
   burgers.createOne(columns, [req.body.name, req.body.patty_type, req.body.has_lettuce,
     req.body.has_tomato, req.body.has_onion, req.body.has_pickles, req.body.has_bacon, 

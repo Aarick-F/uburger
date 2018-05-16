@@ -1,0 +1,32 @@
+#words {
+  opacity: 0;
+}
+#getStarted {
+  opacity: 0;
+  margin-top: 20px;
+}
+#brand {
+  font-size: 1.5em;
+}
+
+#getStarted:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+#getStarted:active {
+  transform: scale(0.95);
+  transition: 0.1s;
+}
+
+.show {
+  animation: fade 1s linear forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
