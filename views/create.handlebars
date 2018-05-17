@@ -1,1 +1,141 @@
-<h1>CREATE PAGE</h1>
+<nav class="navbar is-warning">
+  <div class="container">
+    <div class="navbar-brand">
+      <a id="brand" class="navbar-item"><strong>uBurger</strong></a>
+      <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+      <span></span>
+      <span></span>
+      <span></span>
+      </span>
+    </div>
+    <div id="navbarMenuHeroA" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="#" class="navbar-item is-active">HOME</a>
+        <a href="#" class="navbar-item">VIEW ORDERS</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">Create a Burger</h1>
+    <h2 class="subtitle">Select from the options below!</h2>
+  </div>
+</section>
+
+<div id="pattySection" class="container">
+  <div class="level">
+    <div class="title level-item">Patty</div>
+  </div>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article data-name="Meat" data-price="5.25" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Meat</div>
+        <div class="subtitle level-item">$5.25</div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article data-name="Veggie" data-price="4.75" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Veggie</div>
+        <div class="subtitle level-item">$4.75</div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div id="toppingsSection" class="container">
+  <div class="level">
+    <div class="title level-item">Toppings</div>
+  </div>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article data-name="Lettuce" data-price="0.25" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Lettuce</div>
+        <div class="subtitle level-item">$0.25</div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article data-name="Tomato" data-price="0.15" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Tomato</div>
+        <div class="subtitle level-item">$0.15</div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article data-name="Onion" data-price="0.1" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Onion</div>
+        <div class="subtitle level-item">$0.10</div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article data-name="Pickles" data-price="0.3" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Pickles</div>
+        <div class="subtitle level-item">$0.30</div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article data-name="Bacon" data-price="1" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Bacon</div>
+        <div class="subtitle level-item">$1.00</div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article data-name="Cheese" data-price="0.5" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Cheese</div>
+        <div class="subtitle level-item">$0.50</div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article data-name="Ketchup" data-price="0" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Ketchup</div>
+        <div class="subtitle level-item">Complimentary</div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article data-name="Mustard" data-price="0" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">Mustard</div>
+        <div class="subtitle level-item">Complimentary</div>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article data-name="BBQ" data-price="0" data-selected="false" class="ingredient tile is-child box has-background-warning level">
+        <div class="title level-item">BBQ</div>
+        <div class="subtitle level-item">Complimentary</div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div id="orderDetails" class="container">
+  <div class="level">
+    <div class="title level-item">
+      YOUR ORDER
+    </div>
+  </div>
+  <div class="columns is-mobile is-centered">
+    <div class="column is-half has-background-warning">
+      <ul id="order">
+        <li class="is-size-5">Select some ingredients!</li>
+      </ul>
+      <div id="price">$0.00</div>
+      <div class="level">
+        <input id="name" class="input level-item is-medium" type="text" placeholder="Your Name (REQUIRED)">
+      </div>
+        <button id="submit" class="button is-centered is-medium is-inverted is-warning">Place Order</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer class="footer has-background-warning">
+  <div class="container">
+    <ul id="footerContent">
+      <li><a href="https://github.com/Aarick-F" target="_blank">Coded & Designed by Aarick-F</a></li>
+    </ul>
+  </div>
+</footer>
+<script type="text/javascript" src="./javascript/create.js"></script>

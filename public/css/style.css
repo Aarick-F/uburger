@@ -1,10 +1,12 @@
 #words {
   opacity: 0;
 }
+
 #getStarted {
   opacity: 0;
   margin-top: 20px;
 }
+
 #brand {
   font-size: 1.5em;
 }
@@ -13,6 +15,7 @@
   transform: scale(1.1);
   transition: 0.1s;
 }
+
 #getStarted:active {
   transform: scale(0.95);
   transition: 0.1s;
@@ -20,6 +23,68 @@
 
 .show {
   animation: fade 1s linear forwards;
+}
+
+body {
+  height: 100%;
+  background: #f0f0f0;
+}
+
+#brand {
+  font-size: 1.5em;
+}
+
+footer {
+  margin-top: 35px;
+}
+
+.footer {
+  padding: 1.5rem;
+}
+
+.footer a {
+  color: #222;
+}
+
+.tile {
+  cursor: pointer;
+}
+
+#toppingsSection {
+  margin-top: 35px;
+}
+
+#orderDetails {
+  margin-top: 35px;
+}
+
+#submit {
+  width: 100%;
+}
+
+#order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#price {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.level {
+  margin-bottom: 0;
+}
+
+#footerContent {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 @keyframes fade {

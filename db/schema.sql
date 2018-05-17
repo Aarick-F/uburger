@@ -16,6 +16,6 @@ CREATE TABLE orders (
   has_ketchup BIT DEFAULT 0,
   has_mustard BIT DEFAULT 0,
   has_bbq BIT DEFAULT 0,
-  price DECIMAL(10, 2) NOT NULL,
+  price VARCHAR(50) NOT NULL,
   PRIMARY KEY(order_number)
 );

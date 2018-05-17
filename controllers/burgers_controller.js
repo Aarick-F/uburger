@@ -16,12 +16,16 @@ router.get("/orders", (req, res) => {
       orders: data
     };
     console.log(ordersObject);
-    res.render("orders", ordersObject);
+    res.json(ordersObject);
   });
 });
 
 router.get("/create", (req, res) => {
   res.render("create");
+});
+
+router.get("/api/orders", (req, res) => {
+  res.json
 });
 
 router.post("/api/orders", (req, res) => {
