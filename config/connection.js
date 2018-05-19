@@ -8,7 +8,7 @@ const connectionParams = {
   database: "burgers_db"
 };
 
-console.log(process.env.JAWS_DB);
+console.log(process.env.JAWSDB_URL);
 let connection;
 
 if(process.env.JAWSDB_URL) {
