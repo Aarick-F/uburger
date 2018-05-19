@@ -1,1 +1,49 @@
-<h1>ORDERS PAGE</h1>
+<nav class="navbar is-warning">
+  <div class="container">
+    <div class="navbar-brand">
+      <a id="brand" class="navbar-item" href="/"><strong>uBurger</strong></a>
+      <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+      <span></span>
+      <span></span>
+      <span></span>
+      </span>
+    </div>
+    <div id="navbarMenuHeroA" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="/" class="navbar-item is-active">HOME</a>
+        <a href="/orders" class="navbar-item">VIEW ORDERS</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h1 class="title">View Orders</h1>
+    <h2 class="subtitle">...and devour them</h2>
+  </div>
+</section>
+
+<section id="orderContainer">
+  <div class="container">
+    <div id="orderDisplay">
+      {{#each orders}}
+        <div class="orderContents has-background-warning box">
+          <h1><strong>ORDER #: {{this.order_number}}</strong></h1>
+          <h1>NAME: {{this.name}}</h1>
+          <h1>PRICE: {{this.price}}</h1>
+          <button data-order={{this.order_number}} class="devour button is-warning is-inverted">Devour</button>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<footer class="footer has-background-warning">
+  <div class="container">
+    <ul id="footerContent">
+      <li><a href="https://github.com/Aarick-F" target="_blank">Coded & Designed by Aarick-F</a></li>
+    </ul>
+  </div>
+</footer>
+<script type="text/javascript" src="./javascript/orders.js"></script>

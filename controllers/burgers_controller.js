@@ -12,11 +12,7 @@ router.get("/", (req, res) => {
 
 router.get("/orders", (req, res) => {
   burgers.selectAll(data => {
-    let ordersObject = {
-      orders: data
-    };
-    console.log(ordersObject);
-    res.json(ordersObject);
+    res.render("orders", {orders: data});
   });
 });
 
@@ -25,7 +21,13 @@ router.get("/create", (req, res) => {
 });
 
 router.get("/api/orders", (req, res) => {
-  res.json
+  burgers.selectAll(data => {
+    let ordersObject = {
+      orders: data
+    };
+    console.log(ordersObject);
+    res.json(ordersObject);
+  });
 });
 
 router.post("/api/orders", (req, res) => {
@@ -35,6 +37,17 @@ router.post("/api/orders", (req, res) => {
     req.body.price], result => {
     res.json({id: result.insertId});
   });
+});
+
+router.delete("/api/orders/:orderNumber", (req, res) => {
+  let condition = "order_number=" + req.params.orderNumber;
+  burgers.delete(condition, result => {
+    if(result.affectedRows == 0) {
+      return res.status(404).end();
+    } else {
+      res.status(200).end();
+    }
+  })
 });
 
 module.exports = router;

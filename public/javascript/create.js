@@ -30,7 +30,8 @@ $("#submit").on("click", function(e) {
   } else if(order.indexOf("Meat") === -1 && order.indexOf("Veggie") === -1){
     alert("You have to at least select a patty type");
   } else {
-    finalOrder.push(name);
+    $("#orderModal").addClass("is-active");
+    finalOrder.push(name.toUpperCase());
     if(order.indexOf("Meat") !== -1) {
       finalOrder.push(order[order.indexOf("Meat")]);
     } else {

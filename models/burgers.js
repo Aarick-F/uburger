@@ -10,6 +10,11 @@ const burger = {
     orm.createOne("orders", cols, vals, res => {
       cb(res);
     });
+  },
+  delete: (condition, cb) => {
+    orm.delete("orders", condition, res => {
+      cb(res);
+    });
   }
 }
 

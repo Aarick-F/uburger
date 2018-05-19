@@ -28,6 +28,15 @@ const orm = {
       if(err) throw err;
       cb(result);
     });
+  },
+  delete: (table, condition, cb) => {
+    let queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
+    connection.query(queryString, (err, result) => {
+      if(err) throw err;
+      cb(result);
+    });
   }
 }
 
